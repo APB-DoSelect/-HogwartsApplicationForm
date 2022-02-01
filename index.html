@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<h1 id="title">Hogwarts application form</h1>
+<p id="description" class="desc">Please fill out the following application in order to register yourself at Hogwarts, School of Witchcraft and Wizardry. Please note, that you have to be at least 11 years of age in order to register. You shall be notified of your acceptance or rejection on your eOwl within 14 days of application.</p>
+
+<form id="survey-form">
+  <div>
+  <label for="name" id="name-label">Name and last name:</label>
+  <input type="text" class="field" id="name" placeholder="Enter your name" required>
+  </div>
+  
+  <div>
+    <label for="email" id="email-label">eOwl:</label>
+    <input type="email" class="field" id="email" placeholder="Enter your email" required>
+  </div>
+  
+  <div>
+  <label for="age" id="number-label">Age:</label>
+  <input type="number" class="field" id="number" min="11" max="99" placeholder="Age">
+  </div>
+  
+  <div>
+    <label for="pet">Select your pet:</label><br>
+    <select name="pet" id="dropdown" class="field">
+      <option value="cat">Cat</option>
+      <option value="owl">Owl</option>
+      <option value="rat">Rat</option>
+      <option value="toad">Toad</option>
+    </select>
+  </div>
+  
+  <div>
+    <label for="house">Select your house:</label><br>
+    <label for="gryffindor">
+      <input type="radio" id="gryffindor" value="gryffindor" name="house">Gryffindor
+    </label><br>
+    <label for="hufflepuff">
+      <input type="radio" id="hufflepuff" value="hufflepuff" name="house">Hufflepuff
+    </label><br>
+    <label for="ravenclaw">
+      <input type="radio" id="ravenclaw" value="ravenclaw" name="house">Ravenclaw
+    </label><br>
+    <label for="slytherin">
+      <input type="radio" id="slytherin" value="slytherin" name="house">Slytherin
+    </label>
+  </div>
+  
+  <div>
+    <label for="subject">Select your subjects:</label><br>
+    <label for="arithmancy">
+      <input id="arithmancy" value="arithmancy" type="checkbox" name="subject">Arithmancy
+    </label><br>
+    <label for="astronomy">
+      <input id="astronomy" value="astronomy" type="checkbox" name="subject">Astronomy
+    </label><br>
+    <label for="comc">
+      <input id="comc" value="comc" type="checkbox" name="subject">Care of Magical Creatures
+    </label><br>
+    <label for="charms">
+      <input id="charms" value="charms" type="checkbox" name="subject">Charms
+    </label><br>
+    <label for="dada">
+      <input id="dada" value="dada" type="checkbox" name="subject">Defense Against the Dark Arts
+    </label><br>
+    <label for="divination">
+      <input id="divination" value="divination" type="checkbox" name="subject">Divination
+    </label><br>
+    <label for="flying">
+      <input id="flying" value="flying" type="checkbox" name="subject">Flying
+    </label><br>
+    <label for="herbology">
+      <input id="herbology" value="herbology" type="checkbox" name="subject">Herbology
+    </label><br>
+    <label for="history">
+      <input id="history" value="history" type="checkbox" name="subject">History of Magic
+    </label><br>
+    <label for="muggle">
+      <input id="muggle" value="muggle" type="checkbox" name="subject">Muggle studies
+    </label><br>
+    <label for="potions">
+      <input id="potions" value="potions" type="checkbox" name="subject">Potions
+    </label><br>
+    <label for="runes">
+      <input id="runes" value="runes" type="checkbox" name="subject">Study of ancient runes
+    </label><br>
+    <label for="transfiguration">
+      <input id="transfiguration" value="transfiguration" type="checkbox" name="subject">Transfiguration
+    </label>
+  </div>
+  
+  <div>
+    <label for="introduction">Tell us something about yourself:</label><br>
+    <textarea id="introduction" name="introduction" rows="5" cols="55">Tell us about your likes, dislikes, hobbies and interests, so that we can get to know you better.
+    </textarea>
+  </div>
+  
+  <br>
+  <button type="submit" id="submit">Submit application</button>
+</form>
+</body>
+</html>
